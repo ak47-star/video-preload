@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>preload video></title>
+</head>
+<body>
+  <div id="main">
+  	<div class="main-content" style="background-color: yellow;">
+  		<video controls preload="metadata" width="400" height="400">
+  			<source src="assets/video/oasis.mp4" type="video/mp4">
+  		</video>
+  		<video controls preload="auto" width="400" height="400">
+  			<source src="assets/video/oasis.mp4" type="video/mp4">
+  		</video>
+  		<link rel="preload" as="video" href="https://www.youtube.com/watch?v=blHZ6zCYvMM">
+
+<video id="video" controls></video>
+  	</div>
+  </div>
+  <script type="text/javascript">
+  document.getElementsByTagName("video")[0].setAttribute("src", "https://www.youtube.com/watch?v=blHZ6zCYvMM");
+  </script>
+</body>
+</html>
